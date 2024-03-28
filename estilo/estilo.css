@@ -1,0 +1,28 @@
+h1{
+    color: rgb(68, 11, 11);
+    background-color: aliceblue;
+    /* o text-align só funciona para textos, para realocalizar outros compoentes é outra função  */
+    text-align: center;
+    font-size: 50rem;
+
+}
+h2{
+   color: brown; 
+}
+h2{
+   color: green; 
+}
+p{
+    color: blue;
+    background-color:aquamarine;
+    text-align: justify;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+span{
+    color: aqua;
+    font-weight: bold;
+}
+strong {
+    color: aqua;
+}
