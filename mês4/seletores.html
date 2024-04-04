@@ -4,27 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>seletores</title>
+    <link rel="stylesheet" href="../../../estilo/estilo.css">
     <style>/*selecione todas as tags*/
     
     h1{
         color: brown;
     }
-    #destaque{
+    /*selecione todos os elementos com a classe destaque*/
+    .destaque{
+        color: aliceblue;
         background-color: black;
     }
-    #cor_primaria{
+    .cor_primaria{
         color: aliceblue;
     }
+    /*selecione todos os elementos com o id titulo_principal*/
     #titulo_principal{
         color: chocolate;
     }
+    #conteudo_principal{
+        color: aquamarine;
+        text-decoration: dashed;}
     </style>
 </head>
 <body>
     <h1 id="titulo_principal">Hello, word</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus et, odio perspiciatis ab ex recusandae repellat illum nobis ea similique nihil adipisci officiis ut autem cupiditate incidunt tempore itaque consectetur.</p>
-    <p id="color_primaria">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero alias ipsam voluptas doloribus ut est voluptates asperiores? Asperiores laborum error quas tempore numquam similique dolorem, beatae rerum, aliquam, dolor quam!</p>
+    <p class="destaque"></p>
     <h1>Hello, word</h1>
-    <p id="destaque">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero alias ipsam voluptas doloribus ut est voluptates asperiores? Asperiores laborum error quas tempore numquam similique dolorem, beatae rerum, aliquam, dolor quam!</p>
+    <p class="cor_primaria">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero alias ipsam voluptas doloribus ut est voluptates asperiores? Asperiores laborum error quas tempore numquam similique dolorem, beatae rerum, aliquam, dolor quam!</p>
 </body>
 </html>
