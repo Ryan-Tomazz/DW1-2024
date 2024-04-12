@@ -20,12 +20,13 @@ h1 {
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
+    text-align: left;
 
 }
 
 .p{
     font-family: "Platypi", serif;
     font-optical-sizing: auto;
-    font-weight: normal;
+    font-weight: 10em;
     font-style: normal; 
 }
