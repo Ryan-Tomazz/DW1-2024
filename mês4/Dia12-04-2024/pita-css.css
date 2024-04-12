@@ -6,6 +6,8 @@ h1 {
     font-weight: weight;
     font-style: normal;
     text-align: center;
+    font-size: 3em;
+    margin-bottom: 5px;
 }
 
 .formula {
@@ -21,11 +23,15 @@ h1 {
     font-weight: weight;
     font-style: normal;
     text-align: left;
+    margin-bottom: 0;
 
 }
 
-.p{
+p{
     font-family: "Platypi", serif;
-    
-    font-size: 20em;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal; 
+    font-size: 1em;
+    margin-top: 0;
 }
