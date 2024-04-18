@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sedan:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Shadows+Into+Light&display=swap');
+
+.texto{
+    font-size: 1.1em;
+    line-height: 1.5em;
+    text-align: justify;
+    /* <uniquifier>: Use a unique and descriptive class name
+     <weight>: Use a value from 200 to 1000*/
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    padding-left: 1em;
+    padding-right: 1em;
+
+}
+
+.quebra {
+    padding-bottom: 3rem;
+    border-bottom: 1px solid black;
+
+}
+
+.formula{
+    padding: 0 3em;
+}
+
+.quebra2{
+    padding-bottom: 1px;
+}
