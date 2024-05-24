@@ -47,7 +47,7 @@ ul.menu {
     color: white;
     text-align: center;
     text-transform: uppercase;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: space-around;
 }
@@ -73,13 +73,56 @@ a {
     text-decoration: none;
 }
 
-.titulo{
-    justify-content: flex-end;
+.titulo {
+    font-size: 71px;
+    color: black;
     font-family: unset;
-    font-size: 35px;
-    padding-top: 0;
+    font-weight: bold;
 }
 
-.titulo2{
-    font-family: unset;
+ul.cima {
+    border: 20px solid white;
+}
+
+.buscaricon {
+    align-items: right;
+    position: absolute;
+    top: 60px;
+    right: 150px;
+    font-size: 25px;
+
+}
+
+.buscariconescrito {
+    align-items: right;
+    position: absolute;
+    top: 60px;
+    right: 70px;
+    font-size: 20px;
+}
+
+.menuicon {
+    position: absolute;
+    top: 60px;
+    left: 150px;
+    font-size: 25px;
+}
+
+.menuiconescrito {
+    position: absolute;
+    top: 61px;
+    left: 180px;
+    font-size: 20px;
+}
+
+i {
+    font-family: 'Material Icons';
+}
+
+i.red {
+    color: red;
+}
+
+i.blue {
+    color: blue;
 }
