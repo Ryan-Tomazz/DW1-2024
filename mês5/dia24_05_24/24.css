@@ -1,3 +1,8 @@
+:root{
+    --corPrincipal: black;
+    --corSecundaria: white;
+}
+
 * {
     padding: 0px;
     margin: 0px;
@@ -125,4 +130,29 @@ i.red {
 
 i.blue {
     color: blue;
+}
+
+
+.menuvertical{
+    max-width: 350px;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+}
+
+.menuvertical li {
+    border-bottom: 1px solid var(--corPrincipal);
+}
+.menuvertical li a :hover{
+    background-color: var(--corPrincipal);
+    color: var(--corSecundaria);
+}
+.menuvertical li a {
+    background-color: var(--corSecundaria);
+    color: var(--corPrincipal);
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    transition: background 3s;
+    text-transform: uppercase;
 }
