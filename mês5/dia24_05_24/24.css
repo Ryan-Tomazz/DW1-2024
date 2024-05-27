@@ -1,27 +1,13 @@
-:root{
+:root {
     --corPrincipal: black;
     --corSecundaria: white;
 }
 
 * {
-    padding: 0px;
+    padding: opx;
     margin: 0px;
     box-sizing: border-box;
-}
-
-div {
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-.conteiner {
-    background-color: rgb(126, 126, 126);
-    width: 100vw;
-    height: 100vh;
+    overflow-x: hidden;
 }
 
 .cabecalho {
@@ -40,11 +26,8 @@ div {
 }
 
 .texto {
-    background-color: rgb(0, 0, 0);
     width: 100%;
     height: 100vh;
-    text-align: center;
-    color: white;
 }
 
 ul.menu {
@@ -55,6 +38,7 @@ ul.menu {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding-left: 80px;
 }
 
 ul.menu li {
@@ -63,9 +47,17 @@ ul.menu li {
     padding: 10px;
     transition: 0.3s;
     list-style: none;
-
-
     display: inline-block;
+}
+
+ul.cima {
+    border: 20px solid white;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 ul.menu li:hover {
@@ -85,10 +77,6 @@ a {
     font-weight: bold;
 }
 
-ul.cima {
-    border: 20px solid white;
-}
-
 .buscaricon {
     align-items: right;
     position: absolute;
@@ -106,47 +94,26 @@ ul.cima {
     font-size: 20px;
 }
 
-.menuicon {
-    position: absolute;
-    top: 60px;
-    left: 150px;
-    font-size: 25px;
-}
-
-.menuiconescrito {
-    position: absolute;
-    top: 61px;
-    left: 180px;
-    font-size: 20px;
-}
-
-i {
-    font-family: 'Material Icons';
-}
-
-i.red {
-    color: red;
-}
-
-i.blue {
-    color: blue;
-}
-
-
-.menuvertical{
+.menuvertical {
     max-width: 350px;
     width: 100%;
     list-style-type: none;
     padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 260px;
+    height: 100%;
+    background: rgb(151, 151, 151);
+    padding: 6px 14px;
 }
 
-.menuvertical li {
-    border-bottom: 1px solid var(--corPrincipal);
-}
-.menuvertical li a :hover{
+.menuvertical li a :hover {
     background-color: var(--corPrincipal);
     color: var(--corSecundaria);
+    border-bottom: 1px solid var(--corPrincipal);
 }
+
 .menuvertical li a {
     background-color: var(--corSecundaria);
     color: var(--corPrincipal);
@@ -155,4 +122,40 @@ i.blue {
     text-decoration: none;
     transition: background 3s;
     text-transform: uppercase;
+}
+
+
+.checkbox input:checked~.check {
+    .menuvertical {
+        transition: .5s;
+        width: 80px;
+        li, a {
+            display: none;
+        }
+    }
+
+    .checkbox:hover input~.check {
+        .menuvertical {
+            width: 260px;
+        }
+    }
+}
+
+.checkbox {
+    color: transparent;
+}
+
+.icon {
+    color: white;
+    font-size: 45px;
+    a{font-size: 45px;
+    line-height: 0;}
+}
+
+i.red {
+    color: red;
+}
+
+i.blue {
+    color: blue;
 }

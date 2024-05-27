@@ -6,20 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Folha de São Paulo</title>
     <link rel="stylesheet" href="./24.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-    <div class="coteiner">
+    <div class="conteiner">
         <ul class="cima">
-            <li class="titulo">Folha de S.Paulo</li>
-            <li>DESDE 1921 <i class="red">star</i> <i class="blue">star</i> <i>star</i> UM JORNAL EM DEFESA DA ENERGIA
+            <li class="titulo" id="folhadespaulo">Folha de S.Paulo</li>
+            <li>DESDE 1921<i class='bx bxs-star red' ></i><i class='bx bxs-star blue' ></i><i class='bx bxs-star' ></i> UM JORNAL EM DEFESA DA ENERGIA
                 LIMPA</li>
         </ul>
-        <i class="buscaricon">search</i>
+        <i class='bx bx-search-alt-2 buscaricon' ></i>
         <div class="buscariconescrito">BUSCAR</div>
-        <i class="menuicon">menu</i>
-        <div class="menuiconescrito"> MENU</div>
         <ul class="menu">
             <li><a href="https://acervo.folha.uol.com.br/digital/index.do">EDIÇÃO FOLHA</a></li>
             <li><a
@@ -37,27 +35,41 @@
             <li><a href="https://www1.folha.uol.com.br/ilustrada/">cultura</a></li>
             <li><a href="https://f5.folha.uol.com.br/">f5</a></li>
         </ul>
-        <nav>
-            <ul class="menuvertical">
-                <li><a href="#edicaofolha">EDIÇÃO FOLHA</a></li>
-                <li><a href="#minhafolha">MINHA FOLHA</a></li>
-                <li><a href="#brasiliahoje">BRASÍLIA HOJE</a></li>
-                <li><a href="#ultimas">últimas</a></li>
-                <li><a href="#opiniao">opinião</a></li>
-                <li><a href="#politica">política</a></li>
-                <li><a href="#economia">economia</a></li>
-                <li><a href="#mundo">mundo</a></li>
-                <li><a href="#saude">saúde</a></li>
-                <li><a href="#cotidiano">cotidiano</a></li>
-                <li><a href="#esporte">esporte</a></li>
-                <li><a href="#cultura">cultura</a></li>
-                <li><a href="#f5">f5</a></li>
-            </ul>
-        </nav>
-        <div class="cabecalho" id="">Ediçãofolha</div>
-        <div class="subtitulo" id="subtitulo">Minha folha</div>
-        <div class="texto" id="texto">Brasília hoje</div>
+        <div class="cabecalho" id="edicaofolha">Ediçãofolha</div>
+        <div class="subtitulo" id="minhafolha">Minha folha</div>
+        <div class="texto" id="brasiliahoje">Brasília hoje <img src="https://f.i.uol.com.br/fotografia/2023/11/10/1699625526654e3a36e8ebc_1699625526_3x2_md.jpg" alt="imagem  "></div>
+        <div class="texto" id="ultimas">últimas</div>
+        <div class="texto" id="opiniao">opinião</div>
+        <div class="texto" id="economia">economia</div>
+        <div class="texto" id="politica">política</div>
+        <div class="texto" id="mundo">mundo</div>
+        <div class="texto" id="saude">saúde</div>
+        <div class="texto" id="cotidiano">cotidiano</div>
+        <div class="texto" id="esporte">esporte</div>
+        <div class="texto" id="cultura">cultura</div>
+        <div class="texto" id="f5">f5</div>
     </div>
+    <label class="checkbox">
+        <input type="checkbox"><span class="check">
+            <nav>
+                <ul class="menuvertical">
+                    <i class='bx bx-menu icon'><a href="#folhadespaulo">Folha de S.Paulo</a></i>
+                    <li><a href="#edicaofolha">EDIÇÃO FOLHA</a></li>
+                    <li><a href="#minhafolha">MINHA FOLHA</a></li>
+                    <li><a href="#brasiliahoje">BRASÍLIA HOJE</a></li>
+                    <li><a href="#ultimas">últimas</a></li>
+                    <li><a href="#opiniao">opinião</a></li>
+                    <li><a href="#politica">política</a></li>
+                    <li><a href="#economia">economia</a></li>
+                    <li><a href="#mundo">mundo</a></li>
+                    <li><a href="#saude">saúde</a></li>
+                    <li><a href="#cotidiano">cotidiano</a></li>
+                    <li><a href="#esporte">esporte</a></li>
+                    <li><a href="#cultura">cultura</a></li>
+                    <li><a href="#f5">f5</a></li>
+                </ul>
+            </nav>
+        </span>
 </body>
 
 </html>

@@ -1,15 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
 }
 
-body{
+body {
     background-color: aqua;
 }
 
-.sidebar{
+.sidebar {
     position: fixed;
     top: 0;
     left: 0;
@@ -17,24 +17,23 @@ body{
     height: 100%;
     background: purple;
     padding: 6px 14px;
-    overflow: scroll;
 }
 
-.sidebar .logo-menu{
+.sidebar .logo-menu {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 70px ;
+    height: 70px;
 }
 
-.sidebar  .logo-menu .logo{
+.sidebar .logo-menu .logo {
     font-size: 25px;
     padding-left: 10px;
     color: white;
     pointer-events: none;
 }
 
-.sidebar  .logo-menu .toggle-btn{
+.sidebar .logo-menu .toggle-btn {
     position: absolute;
     left: 90%;
     transform: translateX(-50%);
@@ -47,11 +46,11 @@ body{
     cursor: pointer;
 }
 
-.sidebar .list{
+.sidebar .list {
     margin-top: 10px;
 }
 
-.list .list-item{
+.list .list-item {
     list-style: none;
     width: 100%;
     height: 50px;
@@ -59,7 +58,7 @@ body{
     line-height: 50px;
 }
 
-.list .list-item a{
+.list .list-item a {
     padding: 10px;
     display: block;
     align-items: center;
@@ -70,7 +69,29 @@ body{
     transition: .5s;
 }
 
-.list .list-item.active a, .list .list-item a:hover {
+
+.list .list-item a:hover {
     background: rgba(255, 255, 255, 2);
 }
 
+
+.checkbox input:checked~.check{
+    .sidebar {
+        transition: .5s;
+        width: 80px;
+        .logo-menu h2, .list{
+            display: none;
+            .sidebar .logo-menu .toggle-btn{
+                position: absolute;
+                top: 0;
+                left: 5px;
+                
+            }
+        }
+    }
+    .checkbox:hover input~.check {  
+        .sidebar {
+            width: 260px;
+        }
+    }
+}
