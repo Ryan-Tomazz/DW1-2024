@@ -4,30 +4,72 @@
 }
 
 * {
-    padding: opx;
+    padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     overflow-x: hidden;
+
 }
 
 .cabecalho {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(97, 97, 97);
     width: 100%;
-    height: 100vh;
+    height: auto;
     text-align: center;
+    color: white;
+    border: 1px solid black;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 80px;
 }
 
 .subtitulo {
     background-color: rgb(97, 97, 97);
     width: 100%;
-    height: 100vh;
+    height: auto;
+    padding-left: 80px;
     text-align: center;
     color: white;
+    padding-top: 10px;
+    padding-bottom: 10px    ;
 }
 
 .texto {
     width: 100%;
-    height: 100vh;
+    height: auto;
+    padding-left: 80px;
+    text-align: center;
+    image-orientation: center;
+    line-height: 30px;
+
+    nav{
+        border: 1px solid black;
+        border-left: 0;
+        border-right: 0;
+       
+    }
+
+    p{
+        font-size: 20px;
+   
+    }
+
+
+    h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    img {
+        padding-top: 50px;
+        width: 40%;
+        
+    }
+
+}
+
+.texto~div {
+    background-color: blue;
 }
 
 ul.menu {
@@ -129,7 +171,9 @@ a {
     .menuvertical {
         transition: .5s;
         width: 80px;
-        li, a {
+
+        li,
+        a {
             display: none;
         }
     }
@@ -148,8 +192,11 @@ a {
 .icon {
     color: white;
     font-size: 45px;
-    a{font-size: 45px;
-    line-height: 0;}
+
+    a {
+        font-size: 45px;
+        line-height: 0;
+    }
 }
 
 i.red {
