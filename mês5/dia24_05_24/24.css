@@ -3,6 +3,12 @@
     --corSecundaria: white;
 }
 
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
 * {
     padding: 0px;
     margin: 0px;
@@ -31,7 +37,7 @@
     text-align: center;
     color: white;
     padding-top: 10px;
-    padding-bottom: 10px    ;
+    padding-bottom: 10px;
 }
 
 .texto {
@@ -42,16 +48,16 @@
     image-orientation: center;
     line-height: 30px;
 
-    nav{
+    nav {
         border: 1px solid black;
         border-left: 0;
         border-right: 0;
-       
+
     }
 
-    p{
+    p {
         font-size: 20px;
-   
+
     }
 
 
@@ -63,7 +69,7 @@
     img {
         padding-top: 50px;
         width: 40%;
-        
+
     }
 
 }
@@ -126,14 +132,6 @@ a {
     right: 150px;
     font-size: 25px;
 
-}
-
-.buscariconescrito {
-    align-items: right;
-    position: absolute;
-    top: 60px;
-    right: 70px;
-    font-size: 20px;
 }
 
 .menuvertical {
@@ -206,3 +204,50 @@ i.red {
 i.blue {
     color: blue;
 }
+
+.search-box{
+    overflow: hidden;
+    position: fixed;
+    top: 10%;
+    right: 3px;
+    transform: translate(-50%, -50%);
+    background: rgb(216, 213, 213);
+    height: 40px;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    line-height: 40px;
+    /*width: 0;*/
+    transition: .5s;
+}
+
+.search-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(113, 113, 113);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+/*.search-box:hover > search-txt{
+    width: 240px;
+    padding: 0 6px;
+}*/
+
+/*.search-box:hover > search-btn{
+    background: white;
+}*/
