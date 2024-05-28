@@ -166,6 +166,7 @@ a {
 
 
 .checkbox input:checked~.check {
+    overflow-y: hidden;
     .menuvertical {
         transition: .5s;
         width: 80px;
@@ -175,7 +176,7 @@ a {
             display: none;
         }
     }
-
+    
     .checkbox:hover input~.check {
         .menuvertical {
             width: 260px;
@@ -208,12 +209,12 @@ i.blue {
 .search-box{
     overflow: hidden;
     position: fixed;
-    top: 10%;
-    right: 3px;
+    top: 70px;
+    right: 1px;
+    padding-left: 10px;
     transform: translate(-50%, -50%);
     background: rgb(216, 213, 213);
     height: 40px;
-    padding: 10px;
     border-radius: 40px;
     display: flex;
     justify-content: space-between;
@@ -243,9 +244,9 @@ i.blue {
     transition: .5s;
 }
 
-/*.search-box:hover > search-txt{
-    width: 240px;
-    padding: 0 6px;
+/*.search-box > .search-txt{
+    width: 90px;
+
 }*/
 
 /*.search-box:hover > search-btn{
