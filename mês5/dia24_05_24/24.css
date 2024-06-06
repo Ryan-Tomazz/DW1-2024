@@ -211,7 +211,7 @@ i.blue {
     position: fixed;
     top: 70px;
     right: 1px;
-    padding-left: 10px;
+    padding-left: 10px; 
     transform: translate(-50%, -50%);
     background: rgb(216, 213, 213);
     height: 40px;
@@ -231,6 +231,7 @@ i.blue {
     line-height: 40px;
     /*width: 0;*/
     transition: .5s;
+
 }
 
 .search-btn{
