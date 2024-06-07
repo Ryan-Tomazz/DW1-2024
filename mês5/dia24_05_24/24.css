@@ -3,7 +3,7 @@
     --corSecundaria: white;
 }
 
-body{
+body {
     margin: 0;
     height: 100vh;
     width: 100vw;
@@ -165,7 +165,74 @@ a {
 }
 
 
-.checkbox input:checked~.check {
+@media (width: 700px) {
+
+    
+.menuvertical {
+    max-width: 350px;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 260px;
+    height: 100%;
+    background: rgb(151, 151, 151);
+    padding: 6px 14px;
+}
+
+.menuvertical li a :hover {
+    background-color: var(--corPrincipal);
+    color: var(--corSecundaria);
+    border-bottom: 1px solid var(--corPrincipal);
+}
+
+.menuvertical li a {
+    background-color: var(--corSecundaria);
+    color: var(--corPrincipal);
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    transition: background 3s;
+    text-transform: uppercase;
+}
+    nav,
+    ul {
+        flex-direction: column;
+        width: 485px;
+    }
+
+    ul {
+        text-align: center;
+        margin: 0;
+        height: 0;
+    }
+
+    nav {
+        padding: 0;
+        align-items: flex-start;
+    }
+
+    h1 {
+        margin: 10px;
+    }
+
+    button {
+        display: flex;
+    }
+
+    li,
+    ul {
+        width: 100%;
+    }
+
+    ul.responsivo {
+        height: 260px;
+    }
+}
+
+/*.checkbox input:checked~.check {
     overflow-y: hidden;
     .menuvertical {
         transition: .5s;
@@ -182,7 +249,7 @@ a {
             width: 260px;
         }
     }
-}
+}*/
 
 .checkbox {
     color: transparent;
@@ -206,12 +273,12 @@ i.blue {
     color: blue;
 }
 
-.search-box{
+.search-box {
     overflow: hidden;
     position: fixed;
     top: 70px;
     right: 1px;
-    padding-left: 10px; 
+    padding-left: 10px;
     transform: translate(-50%, -50%);
     background: rgb(216, 213, 213);
     height: 40px;
@@ -221,7 +288,8 @@ i.blue {
     align-items: center;
 
 }
-.search-txt{
+
+.search-txt {
     border: none;
     background: none;
     outline: none;
@@ -234,7 +302,7 @@ i.blue {
 
 }
 
-.search-btn{
+.search-btn {
     width: 40px;
     height: 40px;
     border-radius: 50%;
