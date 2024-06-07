@@ -17,6 +17,10 @@ body {
 
 }
 
+.espaco{
+    padding: 25px 0;
+}
+
 .cabecalho {
     background-color: rgb(97, 97, 97);
     width: 100%;
@@ -26,14 +30,12 @@ body {
     border: 1px solid black;
     padding-bottom: 10px;
     padding-top: 10px;
-    padding-left: 80px;
 }
 
 .subtitulo {
     background-color: rgb(97, 97, 97);
     width: 100%;
     height: auto;
-    padding-left: 80px;
     text-align: center;
     color: white;
     padding-top: 10px;
@@ -43,7 +45,6 @@ body {
 .texto {
     width: 100%;
     height: auto;
-    padding-left: 80px;
     text-align: center;
     image-orientation: center;
     line-height: 30px;
@@ -79,6 +80,7 @@ body {
 }
 
 ul.menu {
+    border-bottom: 3px solid white;
     background-color: black;
     color: white;
     text-align: center;
@@ -86,7 +88,9 @@ ul.menu {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding-left: 80px;
+    position: fixed;
+    width: 100%;
+    height: auto;
 }
 
 ul.menu li {
@@ -135,11 +139,11 @@ a {
 }
 
 .menuvertical {
+    position: fixed;
     max-width: 350px;
     width: 100%;
     list-style-type: none;
     padding: 0;
-    position: fixed;
     top: 0;
     left: 0;
     width: 260px;
@@ -165,9 +169,7 @@ a {
 }
 
 
-@media (width: 700px) {
-
-    
+/*@media (width: 100%) {
 .menuvertical {
     max-width: 350px;
     width: 100%;
@@ -197,40 +199,8 @@ a {
     transition: background 3s;
     text-transform: uppercase;
 }
-    nav,
-    ul {
-        flex-direction: column;
-        width: 485px;
-    }
 
-    ul {
-        text-align: center;
-        margin: 0;
-        height: 0;
-    }
-
-    nav {
-        padding: 0;
-        align-items: flex-start;
-    }
-
-    h1 {
-        margin: 10px;
-    }
-
-    button {
-        display: flex;
-    }
-
-    li,
-    ul {
-        width: 100%;
-    }
-
-    ul.responsivo {
-        height: 260px;
-    }
-}
+}*/
 
 /*.checkbox input:checked~.check {
     overflow-y: hidden;
@@ -316,8 +286,8 @@ i.blue {
 /*.search-box > .search-txt{
     width: 90px;
 
-}*/
+}
 
-/*.search-box:hover > search-btn{
+.search-box:hover > search-btn{
     background: white;
 }*/

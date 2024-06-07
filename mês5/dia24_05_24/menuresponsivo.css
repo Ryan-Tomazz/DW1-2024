@@ -78,7 +78,7 @@ button:hover {
     nav,
     ul {
         flex-direction: column;
-        width: 485px;
+        width: 100%;
     }
 
     ul {
