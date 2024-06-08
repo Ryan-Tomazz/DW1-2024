@@ -43,19 +43,30 @@ body {
 }
 
 .texto {
-    width: 100%;
+    display: table-caption;
+    justify-content: center;
+    padding-left: 370px;
+    align-items: center;
+    /*text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;*/
+    width: 200%;
     height: auto;
+    
     text-align: center;
     image-orientation: center;
     line-height: 30px;
 
     nav {
-        border: 1px solid black;
+        
         border-left: 0;
         border-right: 0;
     }
     p {
-        font-size: 17px;
+        font-size: 20px;
         text-align: justify;
         padding-left: 10px;
     }
@@ -63,7 +74,7 @@ body {
 
     h1 {
         text-align: center;
-        font-size: 23px;
+        font-size: 30px;
         text-align: justify;
         padding-left: 10px;
     }
@@ -75,7 +86,7 @@ body {
 
     img {
         padding-top: 0px;
-        width: 70%;
+        width: 60%;
     }
 
 }
