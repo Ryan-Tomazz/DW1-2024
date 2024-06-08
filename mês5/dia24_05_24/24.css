@@ -88,7 +88,7 @@ ul.menu {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: auto;
 }
