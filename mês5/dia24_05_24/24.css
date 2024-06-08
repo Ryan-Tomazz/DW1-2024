@@ -53,27 +53,34 @@ body {
         border: 1px solid black;
         border-left: 0;
         border-right: 0;
-
     }
-
     p {
-        font-size: 20px;
-
+        font-size: 17px;
+        text-align: justify;
+        padding-left: 10px;
     }
 
 
     h1 {
         text-align: center;
-        font-size: 30px;
+        font-size: 23px;
+        text-align: justify;
+        padding-left: 10px;
+    }
+    
+    h1.textoprincipal{
+        text-align: center;
+        
     }
 
     img {
-        padding-top: 50px;
-        width: 40%;
-
+        padding-top: 0px;
+        width: 70%;
     }
 
 }
+
+
 
 .texto~div {
     background-color: blue;
