@@ -47,12 +47,6 @@ body {
     justify-content: center;
     padding-left: 370px;
     align-items: center;
-    /*text-align: center;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    position: absolute;*/
     width: 200%;
     height: auto;
     
@@ -77,6 +71,7 @@ body {
         font-size: 30px;
         text-align: justify;
         padding-left: 10px;
+        overflow: hidden;
     }
     
     h1.textoprincipal{
@@ -90,8 +85,6 @@ body {
     }
 
 }
-
-
 
 .texto~div {
     background-color: blue;
@@ -185,60 +178,6 @@ a {
     transition: background 3s;
     text-transform: uppercase;
 }
-
-
-/*@media (width: 100%) {
-.menuvertical {
-    max-width: 350px;
-    width: 100%;
-    list-style-type: none;
-    padding: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 260px;
-    height: 100%;
-    background: rgb(151, 151, 151);
-    padding: 6px 14px;
-}
-
-.menuvertical li a :hover {
-    background-color: var(--corPrincipal);
-    color: var(--corSecundaria);
-    border-bottom: 1px solid var(--corPrincipal);
-}
-
-.menuvertical li a {
-    background-color: var(--corSecundaria);
-    color: var(--corPrincipal);
-    padding: 10px;
-    display: block;
-    text-decoration: none;
-    transition: background 3s;
-    text-transform: uppercase;
-}
-
-}*/
-
-/*.checkbox input:checked~.check {
-    overflow-y: hidden;
-    .menuvertical {
-        transition: .5s;
-        width: 80px;
-
-        li,
-        a {
-            display: none;
-        }
-    }
-    
-    .checkbox:hover input~.check {
-        .menuvertical {
-            width: 260px;
-        }
-    }
-}*/
-
 .checkbox {
     color: transparent;
 }
@@ -300,12 +239,3 @@ i.blue {
     align-items: center;
     transition: .5s;
 }
-
-/*.search-box > .search-txt{
-    width: 90px;
-
-}
-
-.search-box:hover > search-btn{
-    background: white;
-}*/
