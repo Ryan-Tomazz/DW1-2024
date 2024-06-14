@@ -149,39 +149,6 @@ a {
 
 }
 
-.menuvertical {
-    position: fixed;
-    max-width: 350px;
-    width: 100%;
-    list-style-type: none;
-    padding: 0;
-    top: 0;
-    left: 0;
-    width: 260px;
-    height: 100%;
-    background: rgb(151, 151, 151);
-    padding: 6px 14px;
-}
-
-.menuvertical li a :hover {
-    background-color: var(--corPrincipal);
-    color: var(--corSecundaria);
-    border-bottom: 1px solid var(--corPrincipal);
-}
-
-.menuvertical li a {
-    background-color: var(--corSecundaria);
-    color: var(--corPrincipal);
-    padding: 10px;
-    display: block;
-    text-decoration: none;
-    transition: background 3s;
-    text-transform: uppercase;
-}
-.checkbox {
-    color: transparent;
-}
-
 .icon {
     color: white;
     font-size: 45px;
