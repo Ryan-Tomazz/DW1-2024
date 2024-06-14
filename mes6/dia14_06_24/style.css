@@ -8,7 +8,6 @@
 
 
 ul.menu {
-    position: fixed;
     border-bottom: 3px solid white;
     background-color: black;
     color: white;
@@ -20,19 +19,19 @@ ul.menu {
     width: 100%;
     height: auto;
     padding: 0 20px;
-    
+
 }
 
-ul.menu span{
+ul.menu span {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     width: 500px;
 }
 
-ul.menu img{
-    max-width:150px;
-    max-height:300px;
+ul.menu img {
+    max-width: 150px;
+    max-height: 300px;
     width: auto;
     height: auto;
 }
@@ -51,7 +50,7 @@ ul.menu li {
     justify-content: center;
 }
 
-ul.menu a:hover{
+ul.menu a:hover {
     color: purple;
 }
 
@@ -61,76 +60,177 @@ a {
     text-align: center;
 }
 
-.areaaluno{
+.areaaluno {
     border: 2px solid white;
     border-radius: 5%;
-    background-color: rgb(128,0,128);
+    background-color: rgb(128, 0, 128);
 }
 
-.areaaluno:hover{
+.areaaluno:hover {
     border: 2px solid white;
     border-radius: 5%;
-    background-color: rgb(221,160,221);
+    background-color: rgb(221, 160, 221);
 }
 
-.curso{
+.curso {
     text-align: center;
-    padding: 50px 0;
+    padding: 35px 0;
 
 }
 
-.cardcontainer{
+.curso span {
     display: flex;
-    padding-left: 250px;
-    
+    justify-content: center;
+    padding-bottom: 0px;
 }
-.card{
+
+.card1 {
     width: 350px;
     height: 450px;
     background-color: white;
-    box-shadow: 3px 2px 5px black;
-    left: 100px;
-    bottom: 100px;
     border: 1px solid black;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: absolute;
+    left: 200px;
+    bottom: 50px;
+    justify-content: space-around;
     border-radius: 5%;
     text-align: center;
-    
+
+    img {
+        height: auto;
+        width: auto;
+        max-height: 200px;
+    }
 }
 
-.plano-nome{
-    top: 70px;
-    font-size: 35px;
-    font-weight: bold;
+.card2 {
+    width: 350px;
+    height: 450px;
+    background-color: white;
+    border: 1px solid black;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: absolute;
+    left: 600px;
+    bottom: 50px;
+    justify-content: space-around;
+    border-radius: 5%;
+    text-align: center;
+
+    img {
+        height: auto;
+        width: auto;
+        max-height: 200px;
+    }
 }
 
-.plano-valor{
-    top: 130px;
-    font-size: 40px;
-    color: blue;
-    font-weight: bold;
+.card3 {
+    width: 350px;
+    height: 450px;
+    background-color: white;
+    border: 1px solid black;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: absolute;
+    right: 200px;
+    bottom: 50px;
+    justify-content: space-around;
+    border-radius: 5%;
+    text-align: center;
+
+    img {
+        height: auto;
+        width: auto;
+        max-height: 200px;
+    }
 }
 
-.plano-descricao{
-    text-decoration: none;
+.plano-nome {
+    position: absolute;
     top: 210px;
+    padding: 1px 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.plano-valor {
+    position: absolute;
+    top: 255px;
+    font-size: 38px;
+    color: black;
+    font-weight: bold;
+}
+
+.plano-descricao {
+    text-decoration: none;
+    position: absolute;
+    top: 300px;
     font-size: 20px;
     font-weight: lighter;
     color: grey;
-    li{
+
+    li {
+
         list-style: none;
     }
 }
 
-.plano-comprar{
+.plano-comprar {
     height: 50px;
     width: 200px;
     border-radius: 5%;
-    background-color: rgb(36, 36, 188);
+    background-color: purple;
     color: white;
-    bottom: 60px;
+    position: absolute;
+    bottom: 10px;
     font-size: 25px;
 }
-.plano-comprar span{
+
+.plano-comprar span {
+    position: absolute;
     left: 55px;
+    bottom: 15px;
+}
+
+.vfx {
+    padding-top: 500px;
+}
+
+.vfxbackground {
+    height: auto;
+    width: auto;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.vfxdata {
+    height: auto;
+    width: auto;
+    max-height: 450px;
+    position: absolute;
+    top: 800px;
+    left: 350px;
+}
+
+.vfxlistadeespera {
+    height: 50px;
+    width: 200px;
+    border-radius: 5%;
+    background-color: purple;
+    color: white;
+    position: absolute;
+    top: 1300px;
+    left: 650px;
+    font-size: 25px;
+}
+
+.vfxlistadeespera span {
+    position: absolute;
+    left: 40px;
     bottom: 15px;
 }
