@@ -1,83 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Vivendo de Vídeo - A escola online dos Filmmakers</title>
 </head>
 
 <body>
-    <div id="home" class="container">
-        <ul class="menu">
-            <li><a href="#icon"><img src="https://www.vivendodevideo.com.br/themes/vdv/assets/img/logo.png"
-                        alt="imagem"></a></li>
-            <span>
-                <li><a href="#home">home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#cursos">cursos</a></li>
-                <li><a href="#contato">contato</a></li>
-            </span>
-            <div class="areaaluno">
-                <li><a href="#areadoaluno">área do aluno</a></li>
-            </div>
-        </ul>
-        <div class="espaco"></div>
-        <h1 class="curso">Nossos <span>cursos</span></h1>
-
-        <div class="card1">
-            <img src="https://www.vivendodevideo.com.br/uploads/courses/2023/10/davinci-resolve-by-rabbits-1696337309.jpg"
-                alt="imagem">
-            <div class="plano-nome">DAVINCI RESOLVE - EDIÇÃO PARA INICIANTES</div>
-            <div class="plano-valor">R$ 390,00</div>
-            <div class="plano-descricao">
-                <ul>
-                    <li>5.0 estrelas</li>
-                    <li>66 aulas</li>
-                    <li>18h 30min</li>
-                </ul>
-            </div>
-            <div class="plano-comprar">
-                <span>Comprar</span>
-            </div>
+    <div class="container">
+        <div>
+            <ul class="menu">
+                <li><a href="https://www.vivendodevideo.com.br/"><img
+                            src="https://www.vivendodevideo.com.br/themes/vdv/assets/img/logo.png" alt="imagem"> </a>
+                </li>
+                <span>
+                    <li><a href="#rabbits">VFX</a></li>
+                    <li><a href="#sobre">sobre</a></li>
+                    <li><a href="#curso">cursos</a></li>
+                    <li><a href="#contato">contato</a></li>
+                </span>
+                <div class="areaaluno">
+                    <li><a href="#areadoaluno">área do aluno</a></li>
+                </div>
+            </ul>
         </div>
-        <div class="card2">
-            <img src="https://www.vivendodevideo.com.br/uploads/courses/2023/05/rabbits-ai-1684193817.jpg" alt="imagem">
-            <div class="plano-nome">PROJETO COLAPSO - RABBITS AI</div>
-            <div class="plano-valor">R$ 160,00</div>
-            <div class="plano-descricao">
-                <ul>
-                    <li>5.0 estrelas</li>
-                    <li>21 aulas</li>
-                    <li>03h 41min</li>
-                </ul>
+        <div class="vfx" id="rabbits">
+            <div class="vfxbackground"><img src="https://www.vivendodevideo.com.br/uploads/releases/2024/02/banner.png"
+                    alt="imagem"></div>
+            <div class="vfxdata"><img src="https://www.vivendodevideo.com.br/uploads/releases/2024/06/logo.png" alt="">
             </div>
-            <div class="plano-comprar">
-                <span>Comprar</span>
-            </div>
-        </div>
-        <div class="card3">
-            <img src="https://www.vivendodevideo.com.br/uploads/courses/2022/12/curso-edicao-avancada-lendario-1670280155.jpg"
-                alt="">
-            <div class="plano-nome">EDIÇÃO AVANÇADA - LENDÁRIO</div>
-            <div class="plano-valor">R$ 2.290,00</div>
-            <div class="plano-descricao">
-                <ul>
-                    <li>5.0 estrelas</li>
-                    <li>111 aulas</li>
-                    <li>64h 07min</li>
-                </ul>
-            </div>
-            <div class="plano-comprar">
-                <span>Comprar</span>
-            </div>
-        </div>
-        <div class="vfx">
-            <div class="vfxbackground"><img src="https://www.vivendodevideo.com.br/uploads/releases/2024/02/banner.png" alt="imagem"></div>
-            <div class="vfxdata"><img src="https://www.vivendodevideo.com.br/uploads/releases/2024/06/logo.png" alt=""></div>
             <div class="vfxlistadeespera">
                 <span>lista de espera</span>
+            </div>
+        </div>
+
+        <div id="curso">
+            <h1 class="curso">Nossos <span>cursos</span></h1>
+        </div>
+
+        <div class="cardcontainer">
+
+            <div class="cardespaco1"></div>
+
+            <div class="card">
+                <img src="https://www.vivendodevideo.com.br/uploads/courses/2023/10/davinci-resolve-by-rabbits-1696337309.jpg"
+                    alt="imagem">
+                <div class="plano-nome">DAVINCI RESOLVE - EDIÇÃO PARA INICIANTES</div>
+                <div class="plano-valor">R$ 390,00</div>
+                <div class="plano-descricao">
+                    <ul>
+                        <li>5.0 estrelas</li>
+                        <li>66 aulas</li>
+                        <li>18h 30min</li>
+                    </ul>
+                </div>
+                <div class="plano-comprar">
+                    <span>Comprar</span>
+                </div>
+            </div>
+
+            <div class="cardespaco"></div>
+
+            <div class="card">
+                <img src="https://www.vivendodevideo.com.br/uploads/courses/2023/05/rabbits-ai-1684193817.jpg"
+                    alt="imagem">
+                <div class="plano-nome">PROJETO COLAPSO - RABBITS AI</div>
+                <div class="plano-valor">R$ 160,00</div>
+                <div class="plano-descricao">
+                    <ul>
+                        <li>5.0 estrelas</li>
+                        <li>21 aulas</li>
+                        <li>03h 41min</li>
+                    </ul>
+                </div>
+                <div class="plano-comprar">
+                    <span>Comprar</span>
+                </div>
+            </div>
+
+            <div class="cardespaco"></div>
+
+            <div class="card">
+                <img src="https://www.vivendodevideo.com.br/uploads/courses/2022/12/curso-edicao-avancada-lendario-1670280155.jpg"
+                    alt="">
+                <div class="plano-nome">EDIÇÃO AVANÇADA - LENDÁRIO</div>
+                <div class="plano-valor">R$ 2.290,00</div>
+                <div class="plano-descricao">
+                    <ul>
+                        <li>5.0 estrelas</li>
+                        <li>111 aulas</li>
+                        <li>64h 07min</li>
+                    </ul>
+                </div>
+                <div class="plano-comprar">
+                    <span>Comprar</span>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="curso">Nossos <span>luts e presets</span></h1>
+
+        <div class="luts">
+            <div class="cardcontainer">
+
+                <div class="cardespaco2"></div>
+
+                <div class="card">
+                    <img src="https://www.vivendodevideo.com.br/uploads/courses/2023/10/davinci-resolve-by-rabbits-1696337309.jpg"
+                        alt="imagem">
+                    <div class="plano-nome">DAVINCI RESOLVE - EDIÇÃO PARA INICIANTES</div>
+                    <div class="plano-valor">R$ 390,00</div>
+                    <div class="plano-descricao">
+                        <ul>
+                            <li>5.0 estrelas</li>
+                            <li>66 aulas</li>
+                            <li>18h 30min</li>
+                        </ul>
+                    </div>
+                    <div class="plano-comprar">
+                        <span>Comprar</span>
+                    </div>
+                </div>
+
+                <div class="cardespaco"></div>
+
+                <div class="card">
+                    <img src="https://www.vivendodevideo.com.br/uploads/courses/2023/05/rabbits-ai-1684193817.jpg"
+                        alt="imagem">
+                    <div class="plano-nome">PROJETO COLAPSO - RABBITS AI</div>
+                    <div class="plano-valor">R$ 160,00</div>
+                    <div class="plano-descricao">
+                        <ul>
+                            <li>5.0 estrelas</li>
+                            <li>21 aulas</li>
+                            <li>03h 41min</li>
+                        </ul>
+                    </div>
+                    <div class="plano-comprar">
+                        <span>Comprar</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="curso">A SUA NOVA ESCOLA <span>AUDIOVISUAL</span></h1>
+
+        <div id="sobre">
+            <div class="container_sobre">
+                <div class="card1">
+                    <img src="https://www.vivendodevideo.com.br/themes/vdv/assets/img/about-2.jpg" alt="imagem">
+                    <div class="card2">
+                        <h1>A VIVENDO DE VÍDEO</h1>
+                        <p>Com mais de uma década de experiência, a Rabbits nasceu no Brasil mas rapidamente levou seu
+                            trabalho mundo afora e agora atua como uma empresa internacional especializada em projetos
+                            de
+                            vídeo, entregando qualidade através de imagens cinemáticas para marcas e clientes.
+
+
+                            Desde 2019, expandimos nossa atuação e atendemos uma demanda do mercado ao desenvolver
+                            cursos
+                            técnicos, com conteúdo original e nunca antes visto, ensinando o método da Rabbits para a
+                            produção de conteúdo.</p>
+                        <div class="comprar">
+                            <span>Conhecer cursos</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 

@@ -6,9 +6,11 @@
 
 }
 
+body{
+    background-color: purple;
+}
 
 ul.menu {
-    border-bottom: 3px solid white;
     background-color: black;
     color: white;
     text-align: center;
@@ -19,7 +21,6 @@ ul.menu {
     width: 100%;
     height: auto;
     padding: 0 20px;
-
 }
 
 ul.menu span {
@@ -50,14 +51,15 @@ ul.menu li {
     justify-content: center;
 }
 
-ul.menu a:hover {
-    color: purple;
-}
-
-a {
+ul.menu a {
     color: white;
     text-decoration: none;
     text-align: center;
+    text-transform: uppercase;
+}
+
+ul.menu a:hover {
+    color: purple;
 }
 
 .areaaluno {
@@ -74,7 +76,7 @@ a {
 
 .curso {
     text-align: center;
-    padding: 35px 0;
+    padding: 30px 0;
 
 }
 
@@ -84,21 +86,20 @@ a {
     padding-bottom: 0px;
 }
 
-.card1 {
+.cardcontainer {
+    display: flex;
+}
+
+.card {
     width: 350px;
     height: 450px;
     background-color: white;
     border: 1px solid black;
     display: inline-flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
-    position: absolute;
-    left: 200px;
-    bottom: 50px;
-    justify-content: space-around;
     border-radius: 5%;
     text-align: center;
-
     img {
         height: auto;
         width: auto;
@@ -106,61 +107,25 @@ a {
     }
 }
 
-.card2 {
-    width: 350px;
-    height: 450px;
-    background-color: white;
-    border: 1px solid black;
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    position: absolute;
-    left: 600px;
-    bottom: 50px;
-    justify-content: space-around;
-    border-radius: 5%;
-    text-align: center;
-
-    img {
-        height: auto;
-        width: auto;
-        max-height: 200px;
-    }
+.cardespaco {
+    padding-left: 40px;
 }
 
-.card3 {
-    width: 350px;
-    height: 450px;
-    background-color: white;
-    border: 1px solid black;
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    position: absolute;
-    right: 200px;
-    bottom: 50px;
-    justify-content: space-around;
-    border-radius: 5%;
-    text-align: center;
+.cardespaco1 {
+    padding-left: 200px;
+}
 
-    img {
-        height: auto;
-        width: auto;
-        max-height: 200px;
-    }
+.cardespaco2 {
+    padding-left: 390px;
 }
 
 .plano-nome {
-    position: absolute;
-    top: 210px;
     padding: 1px 5px;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: bold;
 }
 
 .plano-valor {
-    position: absolute;
-    top: 255px;
     font-size: 38px;
     color: black;
     font-weight: bold;
@@ -168,12 +133,9 @@ a {
 
 .plano-descricao {
     text-decoration: none;
-    position: absolute;
-    top: 300px;
     font-size: 20px;
     font-weight: lighter;
     color: grey;
-
     li {
 
         list-style: none;
@@ -181,40 +143,57 @@ a {
 }
 
 .plano-comprar {
-    height: 50px;
-    width: 200px;
+    height: auto;
+    width:  auto;
     border-radius: 5%;
-    background-color: purple;
-    color: white;
-    position: absolute;
-    bottom: 10px;
+    color: black;
     font-size: 25px;
+    overflow: hidden;
 }
 
-.plano-comprar span {
-    position: absolute;
-    left: 55px;
-    bottom: 15px;
+.plano-comprar span{
+    max-width: 500px;
+    max-height: 600px;
+    height: 100%;
+    width: 100%; 
+    color: white;
+    background-color: rgb(128, 0, 128);
 }
 
-.vfx {
-    padding-top: 500px;
+.plano-comprar span:hover{
+    border: 2px solid white;
+    border-radius: 20%;
+    background-color: rgb(221, 160, 221);
+}
+
+.vfx{
+    padding-top: 50px;
 }
 
 .vfxbackground {
     height: auto;
-    width: auto;
-    max-height: 100%;
+    width: 1550px;
     overflow: hidden;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
 }
 
 .vfxdata {
-    height: auto;
-    width: auto;
-    max-height: 450px;
+    height: 700px;
+    width: 500px;
+    overflow: hidden;
     position: absolute;
-    top: 800px;
-    left: 350px;
+    top: 70px;
+    left: 520px;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
 }
 
 .vfxlistadeespera {
@@ -224,13 +203,51 @@ a {
     background-color: purple;
     color: white;
     position: absolute;
-    top: 1300px;
-    left: 650px;
+    top: 530px;
+    left: 670px;
     font-size: 25px;
 }
 
 .vfxlistadeespera span {
+    font-weight: bold;
     position: absolute;
-    left: 40px;
+    left: 25px;
     bottom: 15px;
+}
+
+.container_sobre{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card1{
+    width: auto;
+    height: auto;
+    border: 1px solid white;
+    img {
+        height: auto;
+        width: auto;
+        max-height: 500px;
+    }
+}
+
+.card2{
+    width: 685px;
+    padding: 0 20px;
+    font-size: 23px;
+    font-weight: lighter;
+    text-align: justify;
+    height: auto;
+    background-color: white;
+}
+
+.comprar{
+    padding-left: 240px;
+    text-decoration:underline;   
+    color: white;
+}
+
+.comprar span{
+    background-color: purple;
 }
