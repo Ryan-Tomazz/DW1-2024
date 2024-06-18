@@ -6,7 +6,7 @@
 
 }
 
-body{
+body {
     background-color: purple;
 }
 
@@ -100,6 +100,7 @@ ul.menu a:hover {
     flex-wrap: nowrap;
     border-radius: 5%;
     text-align: center;
+
     img {
         height: auto;
         width: auto;
@@ -136,6 +137,7 @@ ul.menu a:hover {
     font-size: 20px;
     font-weight: lighter;
     color: grey;
+
     li {
 
         list-style: none;
@@ -144,29 +146,29 @@ ul.menu a:hover {
 
 .plano-comprar {
     height: auto;
-    width:  auto;
+    width: auto;
     border-radius: 5%;
     color: black;
     font-size: 25px;
     overflow: hidden;
 }
 
-.plano-comprar span{
+.plano-comprar span {
     max-width: 500px;
     max-height: 600px;
     height: 100%;
-    width: 100%; 
+    width: 100%;
     color: white;
     background-color: rgb(128, 0, 128);
 }
 
-.plano-comprar span:hover{
+.plano-comprar span:hover {
     border: 2px solid white;
     border-radius: 20%;
     background-color: rgb(221, 160, 221);
 }
 
-.vfx{
+.vfx {
     padding-top: 50px;
 }
 
@@ -174,6 +176,7 @@ ul.menu a:hover {
     height: auto;
     width: 1550px;
     overflow: hidden;
+
     img {
         height: 100%;
         width: 100%;
@@ -215,16 +218,17 @@ ul.menu a:hover {
     bottom: 15px;
 }
 
-.container_sobre{
+.container_sobre {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.card1{
+.card1 {
     width: auto;
     height: auto;
     border: 1px solid white;
+
     img {
         height: auto;
         width: auto;
@@ -232,7 +236,7 @@ ul.menu a:hover {
     }
 }
 
-.card2{
+.card2 {
     width: 685px;
     padding: 0 20px;
     font-size: 23px;
@@ -242,12 +246,107 @@ ul.menu a:hover {
     background-color: white;
 }
 
-.comprar{
+.comprar {
     padding-left: 240px;
-    text-decoration:underline;   
+    text-decoration: underline;
     color: white;
 }
 
-.comprar span{
+.comprar span {
     background-color: purple;
+}
+
+
+.contato {
+    width: 1520px;
+    height: 500px;
+    background: rgb(186,85,211);
+    background: linear-gradient(0deg, rgba(186,85,211,1) 0%, rgba(57,0,82,1) 84%);
+}
+
+.meio {
+    display: flex;
+    padding: 0px 100px;
+    border-radius: 5%;
+}
+
+.meio .card {
+    width: 150px;
+    height: 300px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    text-align: justify;
+    border-radius: 5%;
+    padding-top: 40px;
+    line-height: 40px;
+
+    li {
+        list-style: none;
+
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
+.meio .card3 {
+    padding: 20px 20px;
+    height: 300px;
+    width: 500px;
+    background-color: transparent;
+    color: white;
+    border-radius: 5%;
+    justify-content: center;
+
+    p {
+        font-size: 20px;
+        text-align: justify;
+        padding-right: 20px;
+
+    }
+
+    img {
+        height: 100px;
+        width: auto;
+        max-height: 500px;
+    }
+}
+
+.meio .card3 span {
+    font-size: 20px;
+}
+
+.meio .card4 {
+    height: 300px;
+    width: 400px;
+    background-color: transparent;
+    color: white;
+    text-align: justify;
+    border-radius: 5%;
+    padding-top: 40px;
+    line-height: 35px;
+    list-style: none;
+}
+
+.meio .card5 {
+    width: 200px;
+    height: 300px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    text-align: justify;
+    border-radius: 5%;
+    padding-top: 40px;
+    line-height: 40px;
+
+    li {
+        list-style: none;
+
+    }
+
+    p {
+        font-size: 20px;
+    }
 }
