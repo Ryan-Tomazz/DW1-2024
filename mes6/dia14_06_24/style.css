@@ -77,7 +77,9 @@ ul.menu a:hover {
 .curso {
     text-align: center;
     padding: 30px 0;
-
+    background-image: linear-gradient(to top, #800080, #970097, #ae01ae, #c601c6, #de02de, #de02de, #de02de, #de02de, #c601c6, #ae01ae, #970097, #800080);
+    font-size: 50px;
+    color: white;
 }
 
 .curso span {
@@ -86,8 +88,14 @@ ul.menu a:hover {
     padding-bottom: 0px;
 }
 
+.vivendo {
+    background: white;
+}
+
 .cardcontainer {
     display: flex;
+
+    padding-bottom: 130px;
 }
 
 .card {
@@ -100,6 +108,7 @@ ul.menu a:hover {
     flex-wrap: nowrap;
     border-radius: 5%;
     text-align: center;
+    box-shadow: 3px 0px 20px black;
 
     img {
         height: auto;
@@ -153,23 +162,29 @@ ul.menu a:hover {
     overflow: hidden;
 }
 
+.plano-comprar:hover {
+    font-size: 30px;
+    transition: .5s;
+
+}
+
 .plano-comprar span {
     max-width: 500px;
     max-height: 600px;
     height: 100%;
     width: 100%;
     color: white;
-    background-color: rgb(128, 0, 128);
+    background-color: rgb(199, 102, 199);
 }
 
 .plano-comprar span:hover {
     border: 2px solid white;
-    border-radius: 20%;
-    background-color: rgb(221, 160, 221);
+    background-color: purple;
 }
 
+
 .vfx {
-    padding-top: 50px;
+    padding: 50px 0;
 }
 
 .vfxbackground {
@@ -218,10 +233,20 @@ ul.menu a:hover {
     bottom: 15px;
 }
 
+.vfxlistadeespera span:hover{
+    color: purple;
+}
+
+.vfxlistadeespera:hover{
+    transition: .5s;
+    background-color: white;
+}
+
 .container_sobre {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 .card1 {
@@ -249,19 +274,20 @@ ul.menu a:hover {
 .comprar {
     padding-left: 240px;
     text-decoration: underline;
-    color: white;
 }
 
-.comprar span {
-    background-color: purple;
+.comprar span:hover {
+    color: purple;
+    font-size: 30px;
+    transition: .5s;
 }
 
 
 .contato {
     width: 1520px;
-    height: 500px;
-    background: rgb(186,85,211);
-    background: linear-gradient(0deg, rgba(186,85,211,1) 0%, rgba(57,0,82,1) 84%);
+    height: 350px;
+    background: rgb(57, 0, 82);
+    background: linear-gradient(356deg, rgba(57, 0, 82, 1) 51%, rgba(128, 0, 128, 1) 100%);
 }
 
 .meio {
@@ -314,9 +340,7 @@ ul.menu a:hover {
     }
 }
 
-.meio .card3 span {
-    font-size: 20px;
-}
+
 
 .meio .card4 {
     height: 300px;
@@ -328,6 +352,10 @@ ul.menu a:hover {
     padding-top: 40px;
     line-height: 35px;
     list-style: none;
+
+    p {
+        font-size: 17px;
+    }
 }
 
 .meio .card5 {
@@ -349,4 +377,32 @@ ul.menu a:hover {
     p {
         font-size: 20px;
     }
+}
+
+.icon {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.icon i{
+    font-size: 50px;
+    padding: 0px 10px;
+    height: auto;
+    background-color: grey;
+    color: black;
+}
+
+.icon i:hover{
+    transition: .5s;
+    background-color: white;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+a .comprar{
+    color: black;
 }
