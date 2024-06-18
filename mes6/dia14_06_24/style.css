@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root{
+    --purple: purple;
+    --purpleClaro: rgb(199, 102, 199);
+    --grey: grey;
+}
+
 * {
     padding: 0px;
     margin: 0px;
@@ -7,7 +15,7 @@
 }
 
 body {
-    background-color: purple;
+    background-color: var(--purple);
 }
 
 ul.menu {
@@ -59,27 +67,31 @@ ul.menu a {
 }
 
 ul.menu a:hover {
-    color: purple;
+    color: var(--purple);
 }
 
 .areaaluno {
     border: 2px solid white;
     border-radius: 5%;
-    background-color: rgb(128, 0, 128);
+    background-color: var(--purple);
 }
 
 .areaaluno:hover {
     border: 2px solid white;
     border-radius: 5%;
-    background-color: rgb(221, 160, 221);
+    background-color: var(--purpleClaro);
 }
 
 .curso {
     text-align: center;
     padding: 30px 0;
     background-image: linear-gradient(to top, #800080, #970097, #ae01ae, #c601c6, #de02de, #de02de, #de02de, #de02de, #c601c6, #ae01ae, #970097, #800080);
-    font-size: 50px;
+    font-weight: 400;
+    font-size: 40px;
     color: white;
+    font-family: "PT Serif", serif;
+    font-style: normal;
+    text-transform: uppercase;
 }
 
 .curso span {
@@ -88,13 +100,8 @@ ul.menu a:hover {
     padding-bottom: 0px;
 }
 
-.vivendo {
-    background: white;
-}
-
 .cardcontainer {
     display: flex;
-
     padding-bottom: 130px;
 }
 
@@ -145,7 +152,7 @@ ul.menu a:hover {
     text-decoration: none;
     font-size: 20px;
     font-weight: lighter;
-    color: grey;
+    color: var(--grey);
 
     li {
 
@@ -174,12 +181,12 @@ ul.menu a:hover {
     height: 100%;
     width: 100%;
     color: white;
-    background-color: rgb(199, 102, 199);
+    background-color: var(--purpleClaro);
 }
 
 .plano-comprar span:hover {
     border: 2px solid white;
-    background-color: purple;
+    background-color: var(--purple);
 }
 
 
@@ -218,7 +225,7 @@ ul.menu a:hover {
     height: 50px;
     width: 200px;
     border-radius: 5%;
-    background-color: purple;
+    background-color: var(--purple);
     color: white;
     position: absolute;
     top: 530px;
@@ -233,11 +240,11 @@ ul.menu a:hover {
     bottom: 15px;
 }
 
-.vfxlistadeespera span:hover{
-    color: purple;
+.vfxlistadeespera span:hover {
+    color: var(--purple);
 }
 
-.vfxlistadeespera:hover{
+.vfxlistadeespera:hover {
     transition: .5s;
     background-color: white;
 }
@@ -277,7 +284,7 @@ ul.menu a:hover {
 }
 
 .comprar span:hover {
-    color: purple;
+    color: var(--purple);
     font-size: 30px;
     transition: .5s;
 }
@@ -385,7 +392,7 @@ ul.menu a:hover {
     right: 10px;
 }
 
-.icon i{
+.icon i {
     font-size: 50px;
     padding: 0px 10px;
     height: auto;
@@ -393,16 +400,24 @@ ul.menu a:hover {
     color: black;
 }
 
-.icon i:hover{
+.icon i:hover {
     transition: .5s;
     background-color: white;
     color: black;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-a .comprar{
+a .comprar {
     color: black;
+}
+
+.meio a {
+    color: white;
+}
+
+.meio a:hover {
+    text-decoration: underline;
 }
