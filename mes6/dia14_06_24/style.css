@@ -181,12 +181,12 @@ ul.menu a:hover {
     height: 100%;
     width: 100%;
     color: white;
-    background-color: var(--purpleClaro);
+    background-color: var(--purple );
 }
 
 .plano-comprar span:hover {
     border: 2px solid white;
-    background-color: var(--purple);
+    background-color: var(--purpleClaro);
 }
 
 
