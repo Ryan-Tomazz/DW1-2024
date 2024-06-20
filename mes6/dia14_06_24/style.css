@@ -113,6 +113,7 @@ ul.menu a:hover {
     display: inline-flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    gap: 10px;
     border-radius: 5%;
     text-align: center;
     box-shadow: 3px 0px 20px black;
@@ -188,6 +189,7 @@ ul.menu a:hover {
     border: 2px solid white;
     background-color: var(--purpleClaro);
 }
+
 
 
 .vfx {

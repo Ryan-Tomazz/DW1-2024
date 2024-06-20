@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+header{
+    background-color: yellow;
+    height: 10vh;
+    width: 85vw;
+}
+
+aside{
+    background-color: blue;
+    height: 100vh;
+    width: 15vw;
+    position: absolute;
+}
+main{
+    background-color: green;
+    height: 80vh;
+    width: 85vw;
+}
+footer{
+    background-color: red;
+    height: 10vh;
+    width: 85vw;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+}
+
