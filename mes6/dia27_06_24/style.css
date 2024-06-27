@@ -1,0 +1,33 @@
+* {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+body{
+    background-color: blue;
+}
+
+ul.list{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+ul .list-item{
+    background-color: white;
+    width: 800px;
+    height: 150px;
+    border: 5px solid black;
+    border-radius: 5%;
+}
+
+ul .list-item .image{
+    flex-shrink: 0;
+}
+
+ul .list-item .texto{
+    flex-grow: 1;
+}
