@@ -14,8 +14,19 @@ table{
 }
 
 td{
-    padding: 1rem 3rem;
+    padding: 20px 10px;
     border: 1px solid black;
+
+}
+
+tbody{
+    font-size: 17px;
+}
+
+thead{
+    font-weight: bold;
+    font-size: 17px;
+    text-transform: uppercase;
 }
 
 .destaque{
