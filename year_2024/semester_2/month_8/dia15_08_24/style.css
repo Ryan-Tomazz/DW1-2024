@@ -1,0 +1,12 @@
+input{
+    background-color: red;
+    border: 2px solid black;
+    padding: 0.5rem;
+    color: aqua;
+    outline: none;
+
+}
+
+input::placeholder{
+    color: black;
+}
