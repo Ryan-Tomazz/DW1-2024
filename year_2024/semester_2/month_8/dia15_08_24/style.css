@@ -1,7 +1,18 @@
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+}
+
+label{
+    padding: 3px 0;
+}
+
 input{
     background-color: red;
     border: 2px solid black;
-    padding: 0.5rem;
+    border-radius: 5%;
+    padding: 0.7rem;
     color: aqua;
     outline: none;
 
@@ -9,4 +20,8 @@ input{
 
 input::placeholder{
     color: black;
+}
+
+input[type=text]{
+    background-color: brown;
 }
