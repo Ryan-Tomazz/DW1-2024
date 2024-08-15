@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+ul.disciplinas {
+    list-style-type: circle;
+}
+
+.menu {
+    list-style-type: none;
+    margin-left: 5px;
+}
+
+.menu li {
+    background-color: rgb(214, 214, 226);
+    border: 2px solid black;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 150px;
+    transition: 0.5s;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+.menu li:hover {
+    background-color: cadetblue;
+    color: white;
+    cursor: pointer;
+}
+
+a.link {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: orange;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+*{
+    padding-left: 20px;
+}

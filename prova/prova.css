@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
+
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#identificador{
+    text-align: justify;
+    line-height: 1.5;
+    text-indent: 1rem;
+    background-color: yellow;
+    font-size: bold;
+    font-style: italic;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.classe{
+    text-align: justify;
+    line-height: 1.5;
+    text-indent: 1rem;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
