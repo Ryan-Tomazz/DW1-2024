@@ -1,18 +1,34 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.container{
+.container {
     width: 100vw;
     height: 100vh;
     background-color: red;
     display: flex;
 }
 
-.quadro{
-    width: 100vw;
+.quadro, .imagem {
+    width: 50vw;
     height: 100vh;
     background-color: white;
+    display: flex;
 }
 
+.imagem {
+    background-image: url('https://cdn.pixabay.com/photo/2024/08/05/21/19/lion-8947711_1280.jpg');
+    background-position:  center;
+    background-size: contain; 
+    align-items: end;
+}
+
+.imagem > div{
+    padding: 5px 10px;
+    color: white;
+    justify-content: center;
+    border: 4px solid transparent;
+    border-radius: 10%;
+    background-color: transparent;
+}
