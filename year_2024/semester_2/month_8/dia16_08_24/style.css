@@ -6,29 +6,83 @@
 .container {
     width: 100vw;
     height: 100vh;
-    background-color: red;
     display: flex;
 }
 
-.quadro, .imagem {
+.quadro,
+.imagem {
     width: 50vw;
     height: 100vh;
-    background-color: white;
     display: flex;
+    overflow: hidden;
 }
 
 .imagem {
     background-image: url('https://cdn.pixabay.com/photo/2024/08/05/21/19/lion-8947711_1280.jpg');
-    background-position:  center;
-    background-size: contain; 
+    background-position: center;
+    background-size: contain;
+    display: flex;
     align-items: end;
+    border: 1px solid transparent;
+    border-radius: 3%;
 }
 
-.imagem > div{
-    padding: 5px 10px;
+.cor2{
     color: white;
-    justify-content: center;
-    border: 4px solid transparent;
-    border-radius: 10%;
-    background-color: transparent;
+    padding: 15px 30px;
 }
+
+.caixa2,
+.seta1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.caixa2 .seta {
+    padding: 0px 5px;
+    background-color: aliceblue;
+    border: 5px solid aliceblue;
+    border-radius: 20%;
+    color: black;
+}
+
+.seta:hover{
+    background-color: black;
+    color: white;
+    border: 5px solid black;
+    border-radius: 20%;
+}
+
+.esquerda{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    font-size: 20px;
+    gap: 20px;
+}
+
+.forms{
+    text-align: center;
+}
+
+input{
+    text-align: start;
+    font-size: 20px;
+    padding-right: 220px;
+}
+
+.or, .continue, .conditions{
+    display: flex;
+}
+
+.conditions{
+    height: auto;
+    width: 380px;
+    
+}
+
