@@ -73,7 +73,8 @@
 input{
     text-align: start;
     font-size: 20px;
-    padding-right: 220px;
+    padding: 10px 0px;
+    padding-right: 222px;
 }
 
 .or, .continue, .conditions{
@@ -82,7 +83,27 @@ input{
 
 .conditions{
     height: auto;
-    width: 380px;
-    
+    width: 450px;
+}
+
+.continue{
+    gap: 10px;
+    padding: 10px 110px;
+    border: 1px solid black;
+}
+
+.continue:hover, .forms:hover{
+    background-color: bisque;
+    border: 1px solid black;
+}
+
+.con{
+    text-align: justify;
+    padding: 0px 50px;
+}
+
+.forms{
+    padding: 10px 110px;
+    border: 1px solid black;
 }
 
