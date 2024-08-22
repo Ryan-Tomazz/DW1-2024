@@ -3,12 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=".css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <script src="https://kit.fontawesome.com/ecd12e1921.js" crossorigin="anonymous"></script>
+
     <title>IMC</title>
 </head>
 <body>
-    
+    <h1>IMC</h1>
+
+    <label for="weight">weight</label>
+    <input id="weight" type="text">
+
+    <label for="height">height</label>
+    <input id="height" type="text">
+
+    <input id="calc" type="button" value="calc" onclick="calcularImc()">
+    <!--<button id="calc" onclick="calcularImc()">calc</button>-->
+
+
+    <div id="exit"></div>
+
 </body>
 </html>
