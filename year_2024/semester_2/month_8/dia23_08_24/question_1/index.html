@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/ecd12e1921.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Juros compostos</h1>
+
+    <label for="capital">capital</label>
+    <input id="capital" type="text">
+
+    <label for="taxa">taxa de juros mensal, caso seja anual dará errado</label>
+    <input id="taxa" type="text">
+
+    <label for="periodo">periodo de aplicação mensal, caso seja anual dará errado</label>
+    <input id="periodo" type="text">
+
+    <input id="calc" type="button" value="calc" onclick="calcularMontante()">
+    <!--<button id="calc" onclick="calcularImc()">calc</button>-->
+
+
+    <div id="exit">
+    </div>
+</body>
+
+</html>
