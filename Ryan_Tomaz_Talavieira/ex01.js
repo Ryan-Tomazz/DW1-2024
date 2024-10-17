@@ -7,11 +7,9 @@ function somaSerie(n){
         d = j*i
         i ++
         j = j + 2 
-        s += d
-        
+        s += d  
     }
     console.log(s)
 }
 
 console.log(somaSerie(4))
-
