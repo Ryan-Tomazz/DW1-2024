@@ -1,0 +1,17 @@
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 0 50px;
+}
+.lista{
+    display: flex;
+    gap: 5px;
+    list-style: none;
+    font-size: 4vh;
+}
+.caixa{
+    display: flex;
+    justify-content: end;
+}

@@ -1,5 +1,11 @@
 function max (x){
-    if (x[0]>x[1] && x[1]>x[2] &&x[2]>x[3] &&x[3]>x[4])
+    s = x.length
+    for(i=0, v="";i<s; i++){
+        if(x[i]>v){
+            v = x[i]
+        } 
+    }
+    return v
 }
 
 console.log(max([1, 2, 3, 4, 5])); // Deve exibir: 5
