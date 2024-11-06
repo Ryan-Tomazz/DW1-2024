@@ -10,11 +10,28 @@
 <body class="container">
     <header>
         <ul class="lista">
-            <li class="linha">Logo</li>
+            <li class="hideMobile"><a href="#">Logo</a></li>
             <div class="caixa">
-                <li class="linha">Home</li>
-                <li class="linha">Sobre</li>
-                <li class="linha">Contato</li>
+                <li class="hideMobile"><a href="#">Home</a></li>
+                <li class="hideMobile"><a href="#">Sobre</a></li>
+                <li class="hideMobile"><a href="#">Contato</a></li>
+            </div>
+            <li class="hideDesktop">
+                <a href="#"  class="icon" id="menuicon" ><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+            </li>
+        </ul>
+        <ul id="sidebar">
+            <div class="caixa1">
+                <li class="linha"><a href="#">Logo</a></li>
+                <li><a href="#"  class="icon" id="closeicon">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </a></li>
+            </div>
+        
+            <div class="caixa2">
+                <li class="linha"><a href="#">Home</a></li>
+                <li class="linha"><a href="#">Sobre</a></li>
+                <li class="linha"><a href="#">Contato</a></li>
             </div>
         </ul>
     </header>
