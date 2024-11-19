@@ -6,6 +6,5 @@ function fin(x,y){
         } else{v = ("-1")}
     } return v
 }
-
 console.log(fin([1, 2, 3, 4], 3)); // Deve exibir: 2
 console.log(fin(["apple", "banana"], "cherry")); // Deve exibir: -1

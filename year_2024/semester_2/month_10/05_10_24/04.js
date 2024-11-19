@@ -8,5 +8,5 @@ function primo(n){
         console.log("true")
     }
 }
-console.log(primo(100))
+console.log(primo(2000000000457347900608426803862))
 console.log(primo(7)) 
