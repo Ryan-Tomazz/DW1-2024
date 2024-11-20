@@ -1,7 +1,7 @@
 // Crie um array chamado biblioteca que contenha três objetos, cada um representando um livro. Cada livro deve ter as propriedades titulo, autor e anoPublicacao. Exiba todos os títulos no console.
 vetor = [
     {
-    titulo: "Guerra dos tronos",
+    titulo: "A Game of thrones",
     autor: "George R. R. Martin",
     anoPublicacao: "1 de agosto de 1996 "
     },
@@ -17,6 +17,20 @@ vetor = [
     autor: "George R. R. Martin",
     anoPublicacao: "8 de agosto de 2000 "
     },
+    //function titulo () {
+    //    s = vetor.length
+    //    for(i=0; i<s;i++){
+    //        console.log(vetor[i])
+    //    }
+    //}
 ]
 
-console.log(vetor)
+function titulo (vetor) {
+    s = vetor.length
+    for(i=0; i<s;i++){
+        
+        v = (vetor[i])
+        console.log(v.titulo)
+    }
+}
+console.log(titulo(vetor))
