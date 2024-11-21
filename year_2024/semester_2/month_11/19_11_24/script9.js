@@ -16,7 +16,8 @@ estoque = [
 
 function alter (x,y){
     estoque[x]["quantidade"] = y;
-    console.log(estoque[x])
+    return(estoque[x])
 }
 
 console.log(alter(0,1));
+
