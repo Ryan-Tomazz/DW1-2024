@@ -1,0 +1,254 @@
+/* Reset padrão */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.a{
+    color: rgb(251, 234, 255);
+}
+/*paleta de cores*/
+:root{
+    --ciano:rgb(153, 255, 255);;
+    --beige:antiquewhite;
+    --vinho: rgb(131, 27, 89);
+    --rosa-claro:rgb(253, 187, 226);
+    --rosa-medio: rgb(255, 107, 193);
+    --branco:white;
+    --lilas:#ff71ff;
+    --verde: #d3ffd3;
+    --pink: #d63384;
+    --cinza:#555;
+}
+body {
+    min-height: 100vh;
+    background-color:var(--beige);
+    font-family: Arial, sans-serif;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--ciano);
+    width: 100vw;
+    height: 20vh;
+    padding: 0 20px;
+}
+
+#logo {
+    width: 500px;
+    height: auto;
+}
+
+#claro {
+    width: 50px;
+    height: auto;
+    margin-left: auto;
+    background-color:transparent;
+    border: transparent;
+    font-size: 25px;
+    padding-right: 100px;
+}
+
+.tarefas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.box-tarefas {
+    background-color:var(--ciano);
+    width: 400px;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#adicionar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#caixa-escrever {
+    width: 300px;
+    height: 40px;
+    border: 1px solid var(--vinho);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#botao-adicionar {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--vinho);
+    border-radius: 10px;
+    background-color: var(--rosa-claro);
+}
+
+#titulo {
+    font-size: 70px;
+    color: var(--rosa-medio);
+    text-shadow: -2px 2px 4px black;
+}
+
+#subtitulo {
+    font-size: 20px;
+    color: var(--vinho);
+}
+
+#pink {
+    color: var(--rosa-medio);
+}
+
+/* Estilos para tarefas */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li.tarefa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: var(--branco);
+    width: 100%;
+}
+
+li.tarefa span {
+    display: inline-block;
+    max-width: calc(23ch);
+    word-break: break-word;
+    text-align: center;
+    margin-right: auto;
+}
+
+div.botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Espaçamento entre os botões */
+}
+
+div.botoes button {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    background-color:var(--rosa-claro);
+    color: var(--branco);
+    cursor: pointer;
+    text-align: center;
+}
+
+div.botoes button:hover {
+    background-color: var(--lilas);
+}
+
+.checkbox-tarefa {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    appearance: none;
+    border: 1px solid var(--vinho);
+    background-color: var(--branco);
+    cursor: pointer;
+}
+
+.checkbox-tarefa:checked {
+    background-color: var(--lilas);
+    border-color: var(--lilas);
+}
+
+/* Estilo para tarefas concluídas */
+li.completed span {
+    text-decoration: line-through;
+    color:var(--cinza);
+}
+
+li.completed {
+    background-color:var(--verde)
+}
+/*Contatos*/
+#sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Oculto inicialmente */
+    width: 300px;
+    height: 100vh;
+    background-color:var(--rosa-claro); 
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sidebar.show {
+    right: 0; /* Visível */
+}
+
+.sidebar-content {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.sidebar-title {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: var(--pink)
+}
+
+.sidebar-paragraph {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: var(--cinza);
+}
+
+/* Botão de Fechamento */
+#toggleSidebar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 2em;
+    color: var(--pink);
+    cursor: pointer;
+}
+
+#toggleSidebar:hover {
+    color:var(--pink);
+}
+
+/*Contatos acaba aqui*/
+/* Container da barra de progresso */
+.progress-container {
+    width: 80%;
+    background-color:var(--rosa-claro);
+    border-radius: 25px;
+    height: 20px;
+    margin: 20px auto;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Barra de progresso */
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: var(--rosa-medio);
+    transition: width 0.3s ease;
+    border-radius: 25px;
+}
